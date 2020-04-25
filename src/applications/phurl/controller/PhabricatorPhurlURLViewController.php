@@ -37,7 +37,7 @@ final class PhabricatorPhurlURLViewController
     $details = $this->buildPropertySectionView($url);
 
     $url_error = id(new PHUIInfoView())
-      ->setErrors(array(pht('URL must match approved domains / protocols.')))
+      ->setErrors(array(pht('This URL is invalid due to a bad protocol.')))
       ->setIsHidden($url->isValid());
 
     $add_comment_form = $this->buildCommentForm($url, $timeline);
