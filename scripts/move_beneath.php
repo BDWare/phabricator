@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-chdir('/srv/phab/phabricator');
+chdir(realpath(dirname(__FILE__).'/..'));
 
 // See <https://secure.phabricator.com/T10350> for discussion.
 
